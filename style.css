@@ -94,6 +94,7 @@ header {
 }
 .btn {
     color: #E06733;
+    border-radius: 5px;
     border: 1px solid #E06733;
     box-sizing: border-box;
     background: none;
@@ -147,4 +148,33 @@ header {
 .aboutImg {
     width: 464px;
     height: 479px;
+}
+.service {
+    padding: 35px 109px;
+    width: 1440px;
+    height: 1300px;
+    background-color: #EDF2EC;
+}
+.serviceH {
+    width: 306px;
+    font-weight: 400;
+    font-size: 40px;
+    line-height: 52px;
+    color: #499A18;
+}
+.serviceBtnBlock {
+    margin-left: 140px;
+    margin-top: 29px;
+    width: 559px;
+    height: 50px;
+    justify-content: space-between;
+}
+.btnService {
+    padding: 11px 12px 11px 10px;
+    text-align: center;
+    width: 161px;
+    height: 50px;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 26px;
 }
