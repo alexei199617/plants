@@ -21,12 +21,15 @@ html {
 header {
     width: 1440px;
     position: fixed;
-    padding: 49px 108px 20px;
+    padding: 41px 109px 0 108px;
     background-color: #EDF2EC;
     justify-content: space-between;
 }
+.logoBlock {
+    margin-top: 10px;
+}
 .logoP {
-    margin-top: 4px;
+    margin-top: 5px;
     font-weight: 400;
     font-size: 16px;
     line-height: 21px;
@@ -37,21 +40,17 @@ header {
     height: 22px;
 }
 .navbar {
-    margin-right: 9px;
+    width: 454px;
+    justify-content: space-between;
     list-style-type: none;
 }
 .navA {
-    margin-left: 48.4px;
     font-size: 16px;
     line-height: 54px;
     font-weight: 400;
     color: #010201;
     text-decoration: none;
     transition: 0.5s;
-}
-.navAFix {
-    width: 71px;
-    height: 54px;
 }
 .navA:hover {
     cursor: pointer;
@@ -66,7 +65,7 @@ header {
     width: 1440px;
     height: 666px;
     background-color: #EDF2EC;
-    padding: 141px 100px 0;
+    padding: 187px 100px 0;
 }
 .welcBlock {
     justify-content: space-between;
@@ -76,11 +75,12 @@ header {
     height: 407px;
 }
 .welcTextBlock {
+    padding-left: 10px;
     width: 567.5px;
     font-family: 'Inter';
 }
 .welcTextBlock h2 {
-    margin-top: 59px;
+    margin-top: 45px;
     font-weight: 700;
     font-size: 45px;
     line-height: 50px;
@@ -115,15 +115,15 @@ header {
     font-weight: 400;
     font-size: 16px;
     line-height: 20px;
-    width: 159px;
+    width: 158px;
     height: 44px;
-    padding: 11px 26px 13px 19px;
+    padding: 11px 20px;
 }
 .about {
     width: 1440px;
     height: 666px;
     background-color: #fff;
-    padding: 82px 109px 0;
+    padding: 93px 109px 0;
     justify-content: space-between;
 }
 .aboutText {
@@ -150,7 +150,7 @@ header {
     height: 479px;
 }
 .service {
-    padding: 35px 109px;
+    padding: 40px 109px;
     width: 1440px;
     height: 1300px;
     background-color: #EDF2EC;
@@ -163,7 +163,7 @@ header {
     color: #499A18;
 }
 .serviceBtnBlock {
-    margin-left: 140px;
+    margin-left: 142px;
     margin-top: 29px;
     width: 559px;
     height: 50px;
@@ -179,7 +179,7 @@ header {
     line-height: 26px;
 }
 .serviceItemBlock {
-    margin-top: 87px;
+    margin-top: 80px;
     flex-wrap: wrap;
     justify-content: space-between;
 }
@@ -213,9 +213,9 @@ header {
     color: #717171;
 }
 .prices {
-    padding: 40px 109px 10px;
-    /* background-color: #99f; */
-    height: 568px;
+    padding: 39px 109px 10px;
+    background-color: #fff;
+    height: 558px;
     font-family: 'Inter';
 }
 .priceTextBlock {
@@ -223,16 +223,187 @@ header {
 }
 .priceTextBlock h2 {
     margin-left: 0.5px;
-    margin-top: 4px;
     font-size: 40px;
     line-height: 48px;
 }
-.priceTextBlock p {
-    margin-top: -1px;
-    letter-spacing: -0.15px;
+.alignRight {
     text-align: right;
+}
+.priceTextBlock p {
+    letter-spacing: -0.16px;
     width: 455px;
     font-weight: 700;
     font-size: 40px;
     line-height: 50px;
+}
+.priceItemBlock {
+    margin-top: 60px;
+    padding: 34px 41px;
+    width: 332px;
+    height: 282px;
+    box-sizing: border-box;
+    border: 1px solid #E3E1D5;
+    border-radius: 20px;
+    gap: 32px;
+}
+.priceItemCentr{
+    margin: 32px 0;
+}
+.priceItem {
+    padding: 15px 40px;
+    height: 50px;
+    width: 250px;
+    border-radius: 20px;
+    background-color: #EDF2EC;
+    justify-content: space-between;
+    transition: 0.5s;
+}
+.priceItem:hover {
+    cursor: pointer;
+    background-color: #D6E7D2;
+    transition: 0.3s;
+}
+.priceItem:hover > .priceItemCircle {
+    background-color: #AEA1A1;
+    transition: 0.3s;
+}
+.circleArrow {
+    background: url(img/arrow.svg) no-repeat center;
+    height: 16px;
+    width: 16px;
+    transition: 0.3s;
+}
+.priceItem:hover > .priceItemCircle >.circleArrow {
+    background: url(img/arrowLight.svg) no-repeat center;
+    transition: 0.3s;
+    transform: rotate(-180deg);
+}
+.priceItem p {
+    width: 100px;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 20px;
+}
+.priceItemCircle {
+    width: 16px;
+    height: 16px;
+    background-color: #D9D9D9;
+    border-radius: 50%;
+    transition: 0.5s;
+}
+.btnPrice {
+    margin-top: 40px;
+    width: 162px;
+    height: 50px;
+    font-family: 'Inika';
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 26px;
+    text-align: center;
+    padding-right: 10px;
+}
+.priceImg {
+    margin-right: -8px;
+    margin-top: 34px;
+    width: 164px;
+    height: 187px;
+}
+.contacts {
+    background: #EDF2EC;
+    height: 550px;
+    padding: 53px 109px 0;
+}
+.contactImg {
+    width: 400px;
+    height: 497px;
+}
+.contacts h2 {
+    margin-top: 7px;
+    margin-left: 113px;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 52px;
+    color: #499A18;
+}
+.cityBox {
+    margin-right: -1px;
+    margin-top: 95px;
+    margin-left: 69px;
+    justify-content: space-between;
+    padding: 5px 20px;
+    width: 450px;
+    height: 50px;
+    background: #D6E7D2;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    transition: 0.5s;
+}
+.cityBox:hover {
+    background: #C1E698;
+    transition: 0.3s;
+    cursor: pointer;
+}
+.cityBox:hover > .cityCircle {
+    background: #8BA07E;
+}
+.cityBox:hover > .cityCircle >.cityCircleArrow {
+    transform: rotate(-180deg);
+}
+.cityBox p {
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 40px;
+    letter-spacing: 0.05em;
+    color: #717171;
+}
+.cityCircle {
+    margin-top: 12px;
+    margin-right: 15px;
+    background-color: #AEA1A1;
+}
+.cityCircleArrow {
+    background: url(img/arrowLight.svg) no-repeat center;
+}
+.footer {
+    height: 130px;
+    background-color: #fff;
+    padding: 40px 110px;
+    justify-content: space-between;
+    font-weight: 400;
+    font-family: 'Inter';
+    font-size: 20px;
+    line-height: 50px;
+    color: #000;
+}
+.footPMargin {
+    margin-right: 20px;
+    margin-left: 22px;
+}
+.linkRss a {
+    text-decoration: none;
+    color: #000;
+    margin-left: 16px;
+}
+.linkSocial {
+    margin-top: 11px;
+    justify-content: space-between;
+    width: 184px;
+}
+.footLink {
+    height: 28px;
+    width: 28px;
+}
+.footLink:hover {
+    cursor: pointer;
+}
+.linkInst {
+    background: url(img/instagram.svg) no-repeat center;
+}
+.linkFace {
+    background: url(img/facebook.svg) no-repeat center;
+}
+.linkTwit {
+    background: url(img/twitter.svg) no-repeat center;
+}
+.linkPint {
+    background: url(img/pinterest.svg) no-repeat center;
 }

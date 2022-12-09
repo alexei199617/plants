@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="fonts/inter.css">
     <link rel="stylesheet" href="style.css">
     <link rel="shortcut icon" href="img/logo.svg">
-    <title>Plsnts</title>
+    <title>Plants</title>
 </head>
 
 <body>
@@ -21,14 +21,14 @@
             <nav>
                 <ul class="navbar dFlex">
                     <li><a href="#" class="navA navbarActive">Home</a></li>
-                    <li><a href="#" class="navA navAFix">About us</a></li>
-                    <li><a href="#" class="navA">Service </a></li>
-                    <li><a href="#" class="navA">Price</a></li>
-                    <li><a href="#" class="navA">Contacts</a></li>
+                    <li><a href="#about" class="navA">About us</a></li>
+                    <li><a href="#service" class="navA">Service </a></li>
+                    <li><a href="#prices" class="navA">Price</a></li>
+                    <li><a href="#contacts" class="navA">Contacts</a></li>
                 </ul>
             </nav>
         </header>
-        <section class="welcome">
+        <section class="welcome" id="welcome">
             <div class="welcBlock dFlex">
                 <div class="welcImgblock">
                     <img src="img/leafs.svg" alt="leafs">
@@ -44,7 +44,7 @@
                 </div>
             </div>
         </section>
-        <section class="about dFlex">
+        <section class="about dFlex" id="about">
                 <div class="aboutText">
                     <h2>We are professional experienced gardeners</h2>
                     <p>Lorem Ipsum is simply dummy text of the printing and
@@ -58,11 +58,11 @@
                     <img src="img/aboutPlant.jpg" alt="plant">
                 </div>
         </section>
-        <section class="service">
+        <section class="service" id="service">
             <div class="dFlex">
                 <h2 class="serviceH">Service and our projects</h2>
                 <div class="serviceBtnBlock dFlex">
-                    <div class="btn btnService">Gargens</div>
+                    <div class="btn btnService">Gardens</div>
                     <div class="btn btnService">Lawn</div>
                     <div class="btn btnService">Planting</div>
                 </div>
@@ -100,17 +100,69 @@
                 </div>
             </div>
         </section>
-        <section class="prices">
+        <section class="prices" id="prices">
             <div class="priceTextBlock dFlex">
-                <h2>Prices</h2>
-                <p>Our best gardeners are ready to help you</p>
+                <div class="">
+                    <h2>Prices</h2>
+                    <div class="priceItemBlock">
+                        <div class="priceItem dFlex">
+                            <p>Basics</p>
+                            <div class="priceItemCircle">
+                                <div class="circleArrow"></div>
+                            </div>
+                        </div>
+                        <div class="priceItem priceItemCentr dFlex">
+                            <p>Standard</p>
+                            <div class="priceItemCircle">
+                                <div class="circleArrow"></div>
+                            </div>
+                        </div>
+                        <div class="priceItem dFlex">
+                            <p>Pro care</p>
+                            <div class="priceItemCircle">
+                                <div class="circleArrow"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="alignRight">
+                    <p>Our best gardeners are ready to help you</p>
+                    <button type="button" class="btn btnPrice">Contact us</button>
+                    <div class="">
+                        <img src="img/leafsprice.jpg" alt="leafs" class="priceImg">
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="contacts" id="contacts">
+            <div class="dFlex">
+                <img src="img/contactwoman.svg" alt="woman" class="contactImg">
+                <h2>Contact us</h2>
+                <div class="cityBox dFlex">
+                    <p>City</p>
+                    <div class="cityCircle priceItemCircle">
+                        <div class="cityCircleArrow circleArrow"></div>
+                    </div>
+                </div>
             </div>
         </section>
 
-        <section class="contacts">
-        </section>
-
-        <footer></footer>
+        <footer class="footer dFlex">
+            <div class="dFlex">
+                <p>©</p>
+                <p class="footPMargin">2022</p>
+                <p>github</p>
+            </div>
+            <div class="linkRss">
+                <a href="#">Rolling Scopes School</a>
+            </div>
+            <div class="linkSocial dFlex">
+                <div class="footLink linkInst"></div>
+                <div class="footLink linkFace"></div>
+                <div class="footLink linkTwit"></div>
+                <div class="footLink linkPint"></div>
+            </div>
+        </footer>
     </div>
 </body>
 
