@@ -91,6 +91,7 @@ header {
     font-size: 20px;
     line-height: 35px;
     color: #636060;
+    width: 530px;
 }
 .btn {
     color: #E06733;
@@ -406,4 +407,10 @@ header {
 }
 .linkPint {
     background: url(img/pinterest.svg) no-repeat center;
+}
+.hGreen {
+    color: #499A18;
+}
+.hOrange {
+    color: #E06733;
 }
