@@ -385,6 +385,10 @@ header {
     color: #000;
     margin-left: 16px;
 }
+.gitLink {
+    text-decoration: none;
+    color: #000;
+}
 .linkSocial {
     margin-top: 11px;
     justify-content: space-between;
