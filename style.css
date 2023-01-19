@@ -20,7 +20,7 @@ html {
 }
 header {
     width: 1440px;
-    position: fixed;
+    /* position: fixed; */
     padding: 41px 109px 0 108px;
     background-color: #EDF2EC;
     justify-content: space-between;
@@ -63,9 +63,9 @@ header {
 }
 .welcome {
     width: 1440px;
-    height: 666px;
+    height: 571px;
     background-color: #EDF2EC;
-    padding: 187px 100px 0;
+    padding: 92px 100px 0;
 }
 .welcBlock {
     justify-content: space-between;
@@ -237,6 +237,9 @@ header {
     font-weight: 700;
     font-size: 40px;
     line-height: 50px;
+}
+.alignRight p {
+    letter-spacing: 0.1px;
 }
 .priceItemBlock {
     margin-top: 60px;
