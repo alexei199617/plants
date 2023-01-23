@@ -492,7 +492,7 @@ header {
     }
     .aboutText p {
         margin-top: 50px;
-        margin-bottom: 70px;
+        margin-bottom: 68px;
         font-size: 20px;
         line-height: 30px;
     }
@@ -504,74 +504,90 @@ header {
         width: 250px;
         height: 258px;
     }
-
-
-    .serviceItem {
-        width: calc(100%/2 - 77px);
-        height: 48%;
-        border: 2px solid #E3E1D5;
+    .service {
+        padding: 60px 50px;
+        height: 1780px;
     }
-    /* .serviceItem h4 {
-        margin-top: 25px;
-        font-size: 40px;
+    .serviceH {
+        width: 316px;
+        font-size: 35px;
+        line-height: 46px;
+        margin-bottom: 42px;
+    }
+    .serviceItem {
+        width: 281px;
+        margin-bottom: 38px;
+    }
+    .serviceItemBlock  {
+        margin-top: 40px;
+    }
+    .serviceItem h4 {
+        font-size: 20px;
         line-height: 20px;
-    } */
-    /* .serviceItem p {
-        margin-top: 25px;
-        font-size: 32px;
-        line-height: 32px;
-        margin-bottom: 50px;
-    } */
+    }
+    .serviceItem p {
+        margin: auto;
+        margin-top: 12px;
+        width: 210px;
+        font-size: 16px;
+        line-height: 20px;
+    }
     .serviceBtnBlock {
         margin-left: 0px;
     }
-    /* .btnService {
-        border-radius: 10px;
-        font-size: 36px;
-    } */
     .serviceHeader {
         display: block;
     }
-    /* .serviceH {
-        margin-top: 40px;
-        margin-bottom: 80px;
-        font-size: 66px;
-        line-height: 80px;
-    } */
+    .prices {
+        padding: 40px 50px;
+        height: 585px;
+    }
+    .priceTextBlock h2 {
+        margin-left: 14px;
+        font-size: 35px;
+        line-height: 42px;
+    }
+    .priceItem p {
+        font-size: 20px;
+        line-height: 20px;
+    }
+    .alignRight {
+        margin-top: 100px;
+    }
+    .alignRight p {
+        width: 300px;
+        font-size: 25px;
+        line-height: 35px;
+        letter-spacing: -0.2px;
+    }
+    .btnPrice {
+        margin-top: 28px;
+        width: 161px;
+    }
+    .contacts {
+        height: 739px;
+        padding: 40px 159px 0;
+    }
     .contactsBlock {
-        padding: 30px 0;
         flex-direction: column;
     }
     .contacts h2 {
         margin: 0 auto;
         order: 1;
-        /* font-size: 76px;
-        line-height: 70px; */
     }
     .cityBox {
         margin: 0 auto;
         order: 2;
-        /* margin-top: 190px; */
-        align-items: center;
-        /* padding: 0px 40px;
-        box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.25); */
+        margin-top: 100px;
     }
-    /* .cityBox p {
-        font-size: 34px;
-        line-height: 40px;
-    } */
     .contactImg {
         margin: 0 auto;
+        margin-top: 248px;
         order: 3;
+        width: 220px;
+        height: 250px;
+        padding-left: 20px;
     }
-    /* .priceItemCircle {
-        width: 28px;
-        height: 28px;
-    } */
-    /* .circleArrow {
-        height: 30px;
-        width: 30px;
-    } */
     .footer {
         margin: auto;
         display: block;
