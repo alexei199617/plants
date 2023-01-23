@@ -389,6 +389,7 @@ header {
     background: url(img/arrowLight.svg) no-repeat center;
 }
 .footer {
+    width: 1440px;
     height: 130px;
     background-color: #fff;
     padding: 40px 110px;
@@ -598,6 +599,45 @@ header {
     .circleArrow {
         height: 30px;
         width: 30px;
+    }
+    .footer {
+        margin: auto;
+        display: block;
+        width: 670px;
+        height: 300px;
+        font-size: 34px;
+        line-height: 50px;
+    }
+    .footerCentr {
+        width: 600px;
+        margin: auto;
+    }
+    .linkSocial {
+        width: 370px;
+    }
+    .footerFirst {
+        width: 350px;
+        justify-content: space-around;
+    }
+    .linkRss {
+        margin: 20px 0 40px 20px;
+        font-size: 38px;
+    }
+    .footLink {
+        height: 60px;
+        width: 60px;
+    }
+    .linkInst {
+        background-size: 40px;
+    }
+    .linkFace {
+        background-size: 24px;
+    }
+    .linkTwit {
+        background-size: 44px;
+    }
+    .linkPint {
+        background-size: 40px;
     }
 }
 @media screen and (max-width: 400px) {
