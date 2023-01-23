@@ -493,8 +493,7 @@ header {
     color: #E06733;
 }
 
-/* @media screen and (max-width: 1080px) { */
-@media screen and (max-width: 3080px) {
+@media screen and (max-width: 1080px) {
     html {
         width: 100%;
     }
@@ -663,8 +662,7 @@ header {
         margin-bottom: 27px;
     }
 }
-/* @media screen and (max-width: 500px) { */
-@media screen and (max-width: 2000px) {
+@media screen and (max-width: 500px) {
     html {
         width: 380px;
     }
