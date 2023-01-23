@@ -60,6 +60,25 @@ header {
     font-weight: 700;
     color: #E06733;
 }
+.burger {
+    display: none;
+    flex-direction: column;
+    height: 24px;
+    width: 40px;
+    transition: 0.5s;
+}
+.burger:hover {
+    cursor: pointer;
+    background-color: #D6E7D2;
+    border-radius: 10%;
+    transition: 0.3s;
+}
+.burgerLine {
+    margin-bottom: 6px;
+    width: 40px;
+    height: 0px;
+    border: 1px solid #717171;
+}
 .welcome {
     width: 1440px;
     height: 571px;
@@ -561,6 +580,12 @@ header {
     }
 }
 @media screen and (max-width: 400px) {
+    .navbar {
+        display: none;
+    }
+    .burger {
+        display: flex;
+    }
     .welcome {
         height: 1000px;
         padding-left: 70px;
