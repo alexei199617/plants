@@ -438,7 +438,7 @@ header {
     color: #E06733;
 }
 
-@media screen and (max-width: 2000px) {
+@media screen and (max-width: 768px) {
     html {
         width: 768px;
     }
