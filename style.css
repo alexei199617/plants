@@ -444,6 +444,24 @@ header {
 }
 
 @media screen and (max-width: 800px) {
+    .logoImg {
+        width: 40px;
+        height: 40px;
+    }
+    .logoP {
+        margin-top: 0px;
+        font-size: 34px;
+        line-height: 54px;
+    }
+    .navbar {
+        width: 820px;
+        margin-top: 10px;
+        margin-bottom: 30px;
+    }
+    .navA {
+        font-size: 30px;
+        line-height: 54px;
+    }
     .welcome {
         height: 720px;
         padding-left: 70px;
