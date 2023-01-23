@@ -4,6 +4,7 @@ body, h1, h2, h3, h4, p, ul, ol[class], li, figure, figcaption, blockquote, dl, 
 }
 html {
     scroll-behavior: smooth;
+    width: 1440px;
     max-width: 1440px;
     min-width: 250px;
     margin: 0 auto;
@@ -16,6 +17,9 @@ html {
 }
 .dFlex {
     display: flex;
+}
+.dNone {
+    display: none;
 }
 header {
     padding: 41px 109px 0 108px;
@@ -76,6 +80,50 @@ header {
     width: 40px;
     height: 0px;
     border: 1px solid #717171;
+}
+#burgerMenuBlock {
+    top: 0;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    position: fixed;
+    position: absolute;
+    width: 380px;
+    height: 60%;
+    transition: 1s;
+    overflow: hidden;
+}
+.burgerMenu {
+    transition: 1s;
+    background-color: #DCE9D9;
+    padding: 34px 25px;
+    margin: 0 auto;
+    width: 380px;
+    height: 100%;
+    justify-content: space-between;
+    transform: translateX(-380px);
+}
+.btnX {
+    text-align: center;
+    font-size: 18px;
+    border: 1px solid #E06733;
+    background-color: #f7f7f7;
+    color: #E06733;
+    border-radius: 5px;
+    width: 25px;
+    height: 25px;
+    transition: 0.3s;
+}
+.burgA {
+    font-size: 20px;
+}
+.btnX:hover {
+    cursor: pointer;
+    color: #f7f7f7;
+    background-color: #E06733;
+}
+.burgerLinkBlock {
+    list-style-type: none;
 }
 .welcome {
     height: 571px;
@@ -438,7 +486,8 @@ header {
     color: #E06733;
 }
 
-@media screen and (max-width: 1080px) {
+/* @media screen and (max-width: 1080px) { */
+@media screen and (max-width: 3080px) {
     html {
         width: 100%;
     }
@@ -607,7 +656,8 @@ header {
         margin-bottom: 27px;
     }
 }
-@media screen and (max-width: 400px) {
+/* @media screen and (max-width: 500px) { */
+@media screen and (max-width: 2000px) {
     html {
         width: 380px;
     }
