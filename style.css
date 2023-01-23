@@ -109,7 +109,7 @@ header {
 .btnWelc {
     margin-top: 47px;
     border-radius: 10px;
-    border: 2px solid #E06733;
+    border: 3px solid #E06733;
     color: #000;
     font-family: 'Inter';
     font-weight: 400;
@@ -353,6 +353,8 @@ header {
     transform: rotate(-180deg);
 }
 .cityBox p {
+    font-family: 'Inter';
+    font-style: normal;
     font-weight: 400;
     font-size: 20px;
     line-height: 40px;
@@ -423,6 +425,36 @@ header {
 }
 
 @media screen and (max-width: 800px) {
+    .welcome {
+        height: 720px;
+        padding-left: 70px;
+    }
+    .welcBlock {
+        flex-direction: row-reverse;
+    }
+    .welcTextBlock {
+        width: 700px;
+    }
+    .welcTextBlock h2 {
+        margin-top: 0px;
+        font-size: 66px;
+        line-height: 74px;
+    }
+    .welcTextBlock p {
+        margin-top: 60px;
+        font-size: 30px;
+        line-height: 44px;
+        width: 650px;
+    }
+    .btnWelc {
+        margin-top: 60px;
+        border-radius: 15px;
+        border: 3px solid #E06733;
+        font-size: 30px;
+        line-height: 50px;
+        width: 290px;
+        height: 80px;
+    }
     .about {
         display: block;
         height: 1450px;
@@ -447,8 +479,6 @@ header {
     .aboutImg {
         margin: 0 auto;
     }
-
-
     .service {
         height: 2980px;
     }
@@ -489,8 +519,78 @@ header {
         font-size: 66px;
         line-height: 80px;
     }
+    .contacts {
+        height: 1400px;
+    }
+    .contactsBlock {
+        padding: 30px 0;
+        flex-direction: column;
+    }
+    .contacts h2 {
+        margin: 0 auto;
+        order: 1;
+        font-size: 76px;
+        line-height: 70px;
+    }
+    .cityBox {
+        margin: 0 auto;
+        order: 2;
+        margin-top: 190px;
+        align-items: center;
+        padding: 0px 40px;
+        width: 820px;
+        height: 90px;
+        box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.25);
+    }
+    .cityBox p {
+        font-size: 34px;
+        line-height: 40px;
+    }
+    .contactImg {
+        margin: 0 auto;
+        order: 3;
+        margin-top: 470px;
+    }
+    .priceItemCircle {
+        width: 28px;
+        height: 28px;
+    }
+    .circleArrow {
+        height: 30px;
+        width: 30px;
+    }
 }
 @media screen and (max-width: 400px) {
+    .welcome {
+        height: 1000px;
+        padding-left: 70px;
+    }
+    .welcImgblock {
+        display: none;
+    }
+    .welcTextBlock {
+        width: 100%;
+    }
+    .welcTextBlock h2 {
+        margin-top: 20px;
+        font-size: 98px;
+        line-height: 120px;
+    }
+    .welcTextBlock p {
+        margin-top: 80px;
+        font-size: 62px;
+        line-height: 76px;
+        width: 100%;
+    }
+    .btnWelc {
+        margin-top: 60px;
+        border-radius: 30px;
+        border: 7px solid #E06733;
+        font-size: 36px;
+        line-height: 50px;
+        width: 380px;
+        height: 120px;
+    }
     .about {
         height: 1620px;
     }
@@ -510,8 +610,6 @@ header {
         font-size: 60px;
         line-height: 76px;
     }
-
-
     .service {
         height: 10800px;
     }
@@ -557,5 +655,39 @@ header {
         font-size: 70px;
         line-height: 70px;
         margin-bottom: 60px;
+    }
+
+
+
+    .contacts {
+        height: 1640px;
+    }
+    .contactsBlock {
+        padding: 30px 0;
+    }
+    .contacts h2 {
+        font-size: 98px;
+        line-height: 110px;
+    }
+    .cityBox {
+        margin-top: 300px;
+        padding: 0px 80px;
+        width: 95%;
+        height: 180px;
+    }
+    .cityBox p {
+        font-size: 72px;
+        line-height: 80px;
+    }
+    .contactImg {
+        margin-top: 470px;
+    }
+    .priceItemCircle {
+        width: 58px;
+        height: 58px;
+    }
+    .circleArrow {
+        height: 60px;
+        width: 60px;
     }
 }
