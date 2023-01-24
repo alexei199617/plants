@@ -4,10 +4,8 @@ console.log('Мой telegram - https://t.me/gromotron')
 
 let burgerBlock = document.getElementById('burgerMenuBlock');
 let burgerMenu = document.querySelector('.burgerMenu');
-let burgA = document.querySelectorAll('.burgA');
 
-
-
+//Activate burger menu
 document.querySelector('.burger').addEventListener('click', openBurger);
 function openBurger(event) {
     burgerBlock.classList.remove('dNone');
@@ -28,5 +26,52 @@ burgerBlock.addEventListener('click', clickBurgerBlock);
 function clickBurgerBlock(event) {
     if (event.target.id == 'burgerMenuBlock') {
         closeBurger(event);
+    }
+}
+
+
+//Service blur
+// let serviceBtnBlock = document.querySelector('.serviceBtnBlock');
+let countServ = 0; //countServiceBtnActive
+document.querySelector('.serviceBtnBlock').addEventListener('click', clickSevice);
+function clickSevice(event) {
+    if (event.target.type == 'button') {
+        let list = event.target.classList;
+        let id = event.target.id;
+        if (list == 'btn btnService btnActive') {
+            list.remove('btnActive');
+            countServ--;
+            blurAll(countServ, id, false);
+        } else {
+            if (countServ<2) {
+                list.add('btnActive');
+                countServ++;
+                blurAll(countServ, id, true);
+            }
+        }
+    }
+}
+function blurAll (count, id, bool) {
+    if (count == 1) {
+        if (bool == true) {
+            document.querySelectorAll('.serviceItem').forEach((item) => {
+                item.classList.add('blure');
+            });
+            document.querySelectorAll('.'+id).forEach((item) => {
+                item.classList.remove('blure');
+            });
+        } else {
+            document.querySelectorAll('.'+id).forEach((item) => {
+                item.classList.add('blure');
+            });
+        }
+    } else if (count > 1) {
+        document.querySelectorAll('.'+id).forEach((item) => {
+            item.classList.remove('blure');
+        });
+    } else {
+        document.querySelectorAll('.serviceItem').forEach((item) => {
+            item.classList.remove('blure');
+        });
     }
 }
