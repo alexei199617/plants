@@ -23,6 +23,7 @@ html {
 }
 .blure {
     filter: blur(2px);
+    transition: 0.5s;
 }
 header {
     padding: 41px 109px 0 108px;
@@ -255,6 +256,7 @@ header {
     justify-content: space-between;
 }
 .serviceItem {
+    transition: 0.5s;
     font-family: 'Inter';
     margin-bottom: 55px;
     width: calc(100%/3 - 77px);
