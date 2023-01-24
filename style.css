@@ -495,7 +495,7 @@ header {
     color: #E06733;
 }
 
-@media screen and (max-width: 1080px) {
+@media screen and (max-width: 768px) {
     html {
         width: 100%;
     }
@@ -664,7 +664,7 @@ header {
         margin-bottom: 27px;
     }
 }
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 380px) {
     html {
         width: 380px;
     }
