@@ -11,6 +11,7 @@ html {
     -webkit-text-size-adjust: 100%;
     font-family: 'Inika';
     font-style: normal;
+    overflow: hidden;
 }
 * {
     box-sizing: border-box;
@@ -495,7 +496,7 @@ header {
     color: #E06733;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 800px) {
     html {
         width: 100%;
     }
@@ -664,7 +665,7 @@ header {
         margin-bottom: 27px;
     }
 }
-@media screen and (max-width: 380px) {
+@media screen and (max-width: 425px) {
     html {
         width: 380px;
     }
