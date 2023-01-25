@@ -11,7 +11,6 @@ html {
     -webkit-text-size-adjust: 100%;
     font-family: 'Inika';
     font-style: normal;
-    overflow: hidden;
 }
 * {
     box-sizing: border-box;
