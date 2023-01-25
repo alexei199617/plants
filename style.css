@@ -666,7 +666,7 @@ header {
 }
 @media screen and (max-width: 425px) {
     html {
-        width: 380px;
+        /* width: 380px; */
     }
     header {
         padding: 34px 25px;
