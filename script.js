@@ -1,4 +1,4 @@
-console.log('Оценка за задание: 75 баллов')
+console.log('Оценка за задание: 100 баллов')
 console.log('Мой diskord - gromotron5525#6640')
 console.log('Мой telegram - https://t.me/gromotron')
 
@@ -28,7 +28,6 @@ function clickBurgerBlock(event) {
         closeBurger(event);
     }
 }
-
 
 //Service blur
 // let serviceBtnBlock = document.querySelector('.serviceBtnBlock');
@@ -74,4 +73,49 @@ function blurAll (count, id, bool) {
             item.classList.remove('blure');
         });
     }
+}
+
+
+// price accordion
+let countPrice = 0;
+document.querySelector('.priceItemBlock').addEventListener('click', clickPrice);
+function clickPrice(event) {
+    let et = event.target;
+    if (et.classList.contains('priceItemActive') == true) {
+        countPrice = 0;
+        return clickPriceClear();
+    } else if(countPrice > 0) {
+        clickPriceClear();
+        countPrice = 0;
+    }
+    if (et.classList.contains('priceClick') == true) {
+        if (et.classList.contains('priceItemCard') == true) {
+            et.classList.add('priceItemActive');
+            et.nextElementSibling.classList.remove('dNone');
+            console.log(et.nextElementSibling.classList)
+            console.log(1)
+            countPrice++;
+            return
+        } else if (et.parentElement.parentElement.classList.contains('priceItemCard') == true) {
+            et.parentElement.parentElement.classList.add('priceItemActive');
+            console.log(2)
+            et.parentElement.nextElementSibling.classList.remove('dNone');
+            countPrice++;
+            return
+        } else {
+            et.parentElement.parentElement.parentElement.classList.add('priceItemActive');
+            console.log(3)
+            et.parentElement.parentElement.nextElementSibling.classList.remove('dNone');
+            countPrice++;
+            return
+        }
+    }
+}
+function clickPriceClear () {
+    document.querySelectorAll('.priceItemActive').forEach((item) => {
+        item.classList.remove('priceItemActive');
+    });
+    document.querySelectorAll('.pIF').forEach((item) => {
+        item.classList.add('dNone');
+    });
 }
