@@ -81,30 +81,38 @@ let countPrice = 0;
 document.querySelector('.priceItemBlock').addEventListener('click', clickPrice);
 function clickPrice(event) {
     let et = event.target;
+    if (et.classList.contains('pIFBtn') == true) {
+        return
+    }
     if (et.classList.contains('priceItemActive') == true) {
-        countPrice = 0;
         return clickPriceClear();
-    } else if(countPrice > 0) {
+    } else if (et.parentElement.classList.contains('priceItemActive') == true) {
+        return clickPriceClear();
+    } else if (et.parentElement.parentElement.classList.contains('priceItemActive') == true) {
+        return clickPriceClear();
+    } else if (et.parentElement.parentElement.parentElement.classList.contains('priceItemActive') == true) {
+        return clickPriceClear();
+    } else if (countPrice > 0) {
         clickPriceClear();
-        countPrice = 0;
     }
     if (et.classList.contains('priceClick') == true) {
         if (et.classList.contains('priceItemCard') == true) {
             et.classList.add('priceItemActive');
+            et.lastElementChild.classList.remove('dNone');
+            countPrice++;
+            return
+        } else if (et.parentElement.classList.contains('priceItemCard') == true) {
+            et.parentElement.classList.add('priceItemActive');
             et.nextElementSibling.classList.remove('dNone');
-            console.log(et.nextElementSibling.classList)
-            console.log(1)
             countPrice++;
             return
         } else if (et.parentElement.parentElement.classList.contains('priceItemCard') == true) {
             et.parentElement.parentElement.classList.add('priceItemActive');
-            console.log(2)
             et.parentElement.nextElementSibling.classList.remove('dNone');
             countPrice++;
             return
         } else {
             et.parentElement.parentElement.parentElement.classList.add('priceItemActive');
-            console.log(3)
             et.parentElement.parentElement.nextElementSibling.classList.remove('dNone');
             countPrice++;
             return
@@ -118,4 +126,5 @@ function clickPriceClear () {
     document.querySelectorAll('.pIF').forEach((item) => {
         item.classList.add('dNone');
     });
+    countPrice = 0;
 }
