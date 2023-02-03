@@ -128,3 +128,14 @@ function clickPriceClear () {
     });
     countPrice = 0;
 }
+
+
+
+//selectCity
+document.querySelector('.selectCity').addEventListener('change', selectStart);
+function selectStart (event) {
+    document.querySelectorAll('.selectCard').forEach((item) => {
+        item.classList.add('dNone');
+    });
+    document.getElementById(event.target.value).classList.remove('dNone');
+}
