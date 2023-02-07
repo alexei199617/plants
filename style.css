@@ -514,6 +514,9 @@ header {
     line-height: 13px;
     text-align: center;
 }
+.selectCardBtn:hover {
+    cursor: pointer;
+}
 .cityBox:hover {
     background-color: #C1E698;
     transition: 0.3s;
